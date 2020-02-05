@@ -1,2 +1,5 @@
 # RubyLearn
-Belajar Rubyyyyyyy
+Belajar Ruby
+
+
+Bismillahiromhanirohimmm
