@@ -1,7 +1,9 @@
 # PUTS AND PRINT
 
 # Print = hanya satu line
-# Puts  = tambah enter di belakang
+# Puts  = tambah enter di belakan
+# '' => harus string
+# "" => bisa campur
 
 print "Kata pertama"
 puts "ini adalah pelajaran ruby" 
