@@ -81,3 +81,53 @@ arr = ['D', 'C', 'B', 'A', 'Z', 'N']
 arr.each do |item|
     puts "Item : #{item}"
 end
+
+
+# Acak array dengan shuffle
+arr = [1,2,3,4,5]
+puts "#{arr.shuffle!}"
+puts "#{arr}"
+
+
+# looping array dengan looping
+total = 0
+while total < arr.length do
+    puts "#{total}"
+    total += 1
+end
+
+
+# for loop
+puts "========="
+arr2 = [1,2,3,4,5]
+for item in arr2
+    puts item
+end 
+
+
+# INI LOOPING BUAT ITEM
+puts "========="
+a = [1,2,3,4,5]
+a.map do |item|
+    puts "#{item}"
+end
+
+
+
+# FILTER LOOPING
+array = [60,70,80,100,65]
+new_array = []
+array.each do |item|
+    if item >=70 
+        new_array << item # push dalem array
+    end
+end
+puts "#{new_array}"
+
+# Select
+new_array = array.select do |item|
+    item < 100
+end
+puts "#{new_array}"
+# One line select
+puts "#{array.select{|item| item > 80}}"
