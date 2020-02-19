@@ -2,6 +2,7 @@
 # Autodetect tipe data
 # Float lebih kuat daripada integer
 # kalo mau hasilnya float salah satu isi variabel dikasih koma
+# Harus kutip dua
 
 a = 13
 b = 10
@@ -13,7 +14,8 @@ puts "Perkalian   = #{a * b}"
 c = 3.0
 d = 2
 puts "Hasilnya float #{c / d}"
-# cek tipe data
+
+# cek tipe data {classing}
 puts a.class
 puts 2.5.class
 puts 'Cek'.class

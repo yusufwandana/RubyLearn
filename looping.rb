@@ -26,3 +26,7 @@ end
 8.downto(2) do |x|
     puts "Descending #{x}"
 end
+
+# While
+total = 0
+while total < 5 do puts "total = #{total}" total += 1 end
