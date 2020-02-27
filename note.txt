@@ -1,0 +1,20 @@
+====VARIABEL=====
+Local variable (a-z or _)  => Diakses dalam satu method tertentu.
+Instance variable (@)      => Diakses dalam berbagai method di class yang sama.
+Class variable (@@)        => Variabel yang diakses oleh berbagai object yang di instansikan dari class yang sama.
+Global variable ($)        => Variabel yang diakses di seluruh object dan kelas.
+
+====SETTER====
+Method setter , yaitu method yang berfungsi untuk mengeset atau mengubah nilai dari parameter sebuah object.
+
+====MODULE====
+Module merupakan kumpulan dari class, method and constant.
+
+====TERMINAL====
+ls          => list folder dan file
+cd          => change dir
+cd ..       => change dir ke belakang
+mkdir       => make directory
+touch       => make file
+nano        => membuka file dengan nano
+ruby __.rb  => run file ruby

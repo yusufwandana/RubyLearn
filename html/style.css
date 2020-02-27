@@ -1,0 +1,147 @@
+body{
+    background-color: black;
+    margin: 0;
+}
+
+.card{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: yellow;
+    margin: 10px;
+    border: 1px solid black;
+    animation: mymove 5s infinite;
+}
+
+.card > .symbol{
+    background-color: blueviolet;
+}
+
+/* .card::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    display: block;
+}
+
+.card::after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    display: block;
+} */
+
+.symbol{
+    height: 20px;
+    width: 20px;
+    background-color: teal;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+.segitiga{
+    border-width: 57px;
+    border-color: transparent transparent green transparent;
+    border-style: solid;
+    width: 0px;
+}
+
+/* .segitiga::before{
+    content: '';
+    border-width: 63px;
+    border-color: transparent transparent black transparent;
+    border-style: solid;
+    width: 0px;
+    position: absolute;
+    z-index: -1;
+    top: -2px;
+    left: 2px;
+} */
+
+.forflex{
+    /* DISPLAY
+    block = ke bawah 
+    flex  = ke samping (lebih kuat dari block. isi nya dapat berubah. rata kiri dan atas (default))
+    justify-content : meratakan element yg ada display flex
+    align-items
+    */
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    align-self: flex-start;
+}
+
+.forgrid{
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: auto auto; 
+    grid-template-areas: "head head" "side content";
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    grid-area: head;
+    /* position: fixed; */
+}
+
+.sidebar{
+    width: 100px;
+    height: calc(100vh - 100px);
+    background-color: white;
+    grid-area: side;
+    /* position: fixed; */
+}
+
+.content{
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-color: grey;
+    grid-area: content;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-group .card:first{
+    background-color: gold;
+}
+.card:first-child{
+
+}
+.card-group1 .card:nth-child(3){
+    background-color: black;
+}
+.card:first-of-type{
+
+}
+
+@keyframes mymove {
+    0%   {background-color: red;    top: 0;}
+    25%  {background-color: yellow; top: 200px;}
+    50%  {background-color: green;  top: 100px;}
+    75%  {background-color: blue;   top: 200px;}
+    100% {background-color: aqua;   top: 0px;}
+  }
+
+@media screen and (max-width: 1000px){
+    .forgrid{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px auto 100px; 
+        grid-template-areas: "head" "content" "side";
+    }
+    
+    .sidebar{
+        width: 100%;
+        height: 50px;
+    }
+
+    .content{
+        width: 100%;
+        height: calc(100vh - 150px);
+    }
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAiBA,IAAI;EACA,gBAAgB,EAAE,cAAwB;EAC1C,OAAO,EAlBG,IAAI;EAmBd,MAAM,EAdW,GAAO;EAexB,UAAU,EAZC,EAAE;;AAejB,cAAc;EACV,gBAAgB,EAtBJ,KAAK",
+"sources": ["coba.scss"],
+"names": [],
+"file": "coba.css"
+}
